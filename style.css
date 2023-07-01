@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+}
+.img {
+  background-image: url("images/developer.png");
+  min-height: 100vh;
+
+  background-image: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px auto;
+  padding: 45px;
+}
+.intro-text {
+  width: 50%;
+  margin: 20px auto;
+  color: white;
+  font-family: "roboto", sans-serif;
+}
+.position-text,
+.name-text {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.name-text {
+  font-size: 30px;
+}
+.position-text {
+  margin-top: 10px;
+  font-size: 35px;
+}
+.black-section {
+  width: 100%;
+  min-height: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+}
+.text-you {
+  font-size: 40px;
+}
+.cards-section {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: space-evenly;
+  padding: 80px;
+}
+.card {
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  border-radius: 5px;
+  width: 320px;
+  margin: 0 30px;
+  text-align: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+.card:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+.card-head {
+  margin: 20px 0;
+  font-family: "roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: rgba(44, 42, 42, 0.888);
+}
+.card-text {
+  margin: 20px;
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.682);
+}
+.contactAbout {
+  display: flex;
+  flex-direction: row;
+}
+.contact,
+.about {
+  min-height: 250px;
+  color: white;
+  padding: 40px 50px;
+}
+.contact {
+  background-color: #515603;
+}
+.about {
+  background-color: #722300;
+}
+.box-head {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.box-text {
+  font-size: 15px;
+}
+.footer {
+  height: 60px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 60px;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 740px) {
+  .img {
+    min-height: 50vh;
+  }
+  .name-text,
+  .position-text {
+    font-size: 25px;
+  }
+  .black-section {
+    font-size: 20px;
+  }
+  .text-you {
+    font-size: 30px;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+  .contactAbout {
+    flex-direction: column;
+  }
+}
